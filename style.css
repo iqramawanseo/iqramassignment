@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, Verdana, Geneva, Tahoma, sans-serif;
+  background-color: #332929;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.login-container {
+  background-color: rgb(59, 132, 161);
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  width: 350px;
+  text-align: center;
+}
+
+.login-container h1 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #333;
+}
+
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.login-btn {
+  display: inline-block;
+  width: 100%;
+  padding: 10px;
+  background-color: #b3581c;
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.result {
+  display: none;
+  margin-top: 20px;
+}
+
+#login-toggle:checked ~ .result.success {
+  display: block;
+}
+
+#login-toggle:not(:checked) ~ .result.error {
+  display: block;
+}
+
+.profile-pic {
+  width: 150px;
+  border-radius: 50%;
+  margin-top: 10px;
+}
+
+.credit {
+  margin-top: 20px;
+  font-size: 12px;
+  color: gray;
+}
